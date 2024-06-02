@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="./css/account.css">
     <link rel="icon" href="./img/icon.png">
 </head>
+
+<script>
+document.getElementById('vendi').addEventListener('click', function(event) {
+    var nome = document.getElementsByName('nome')[0].value;
+    var descrizione = document.getElementsByName('descrizione')[0].value;
+    
+    // Semplice controllo per evitare l'inserimento di caratteri speciali
+    var regex = /[<>]/g;
+    if (regex.test(nome) || regex.test(descrizione)) {
+        alert('Non sono ammessi caratteri speciali nel nome o nella descrizione del prodotto.');
+        event.preventDefault();
+    }
+});
+</script>
+
 <body>
 	<div class="header">
 		<jsp:include page="header.jsp"/>
