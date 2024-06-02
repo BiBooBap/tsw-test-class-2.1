@@ -9,8 +9,7 @@
 	<title>Geek Factory Project</title>
 	<link rel="stylesheet" href="./css/intro-style.css">
 	<link rel="icon" href="./img/icon.png">
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-29223fdf1c42ac27b10aea5dcd02513f507a22a83ed8d03e5f6bb7f1c41daaaf" crossorigin="anonymous"></script>
 </head>
 <body>
 
